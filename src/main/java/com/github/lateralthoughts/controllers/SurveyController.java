@@ -67,14 +67,12 @@ public class SurveyController {
     public ModelAndView finish(@ModelAttribute(SESSION_ATTRIBUTE_NAME) @Validated(ThirdScreenGroup.class) Survey activity,
                                BindingResult result,
                                SessionStatus status,
-                               RedirectAttributes redirectAttributes,
-                               HttpServletRequest request) {
+                               RedirectAttributes redirectAttributes) {
         ModelAndView form;
         if (result.hasErrors()) {
             form = new ModelAndView("form_3");
         }
         else {
-            activity.setIp(request.getRemoteAddr());
             surveyRepository.save(activity);
             status.setComplete();
             redirectAttributes.addFlashAttribute("count", surveyRepository.count());

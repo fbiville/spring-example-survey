@@ -15,13 +15,9 @@ import static javax.persistence.GenerationType.IDENTITY;
 import static javax.persistence.TemporalType.TIMESTAMP;
 
 @Entity
-@Table(name = "questions", uniqueConstraints = {
-    @UniqueConstraint(name = "onePerIP", columnNames = "ip")
-})
+@Table(name = "questions")
 public class Survey {
     private Long id;
-    @NotBlank
-    private String ip;
     @NotNull(groups = {FirstScreenGroup.class})
     @Min(value = 10, groups = {FirstScreenGroup.class})
     private Integer question1;
@@ -80,14 +76,6 @@ public class Survey {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getIp() {
-        return ip;
-    }
-
-    public void setIp(String ip) {
-        this.ip = ip;
     }
 
     public Integer getQuestion1() {
