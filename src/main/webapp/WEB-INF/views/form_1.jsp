@@ -84,7 +84,7 @@
                     <div class="control-group">
                         <form:label path="question6" cssClass="control-label">When did you start learning English?</form:label>
                         <div class="controls">
-                            <form:input path="question6" type="month" />
+                            <form:input path="question6" type="month" placeholder="YYYY-MM" />
                             <div class="errors">
                                 <form:errors path="question6" cssClass="alert alert-error" />
                             </div>
