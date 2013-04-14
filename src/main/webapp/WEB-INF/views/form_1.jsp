@@ -9,6 +9,7 @@
         require(['jquery', 'modules/survey'], function($, survey) {
             $(document).ready(function() {
                 survey.init(<c:out value='${!start}' />);
+                survey.checkDateSupport();
             });
         });
     </script>

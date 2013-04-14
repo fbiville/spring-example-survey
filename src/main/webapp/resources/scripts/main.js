@@ -4,6 +4,9 @@ require.config({
     shim: {
         'vendor/underscore': {
             exports: '_'
+        },
+        'vendor/Modernizr': {
+            exports: 'Modernizr'
         }
     }
 });

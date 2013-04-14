@@ -1,6 +1,6 @@
 define([
     'jquery',
-    'vendor/underscore'], function($, _) {
+    'vendor/Modernizr'], function($, Modernizr) {
 
     var showForm = function() {
             $('.start').click(function() {
@@ -21,6 +21,17 @@ define([
             else {
                 scroll();
             }
+        },
+        checkDateSupport: function() {
+            Modernizr.load({
+                test: Modernizr.inputtypes.month,
+                nope: ['http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js', '/resources/styles/jquery-ui.css'],
+                complete: function () {
+                    $('input[type=month]').datepicker({
+                        dateFormat: 'yy-mm'
+                    });
+                }
+            });
         }
     }
 });
