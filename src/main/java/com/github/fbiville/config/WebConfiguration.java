@@ -10,10 +10,13 @@ import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.i18n.CookieLocaleResolver;
 import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
 import javax.inject.Named;
+
+import static java.util.Locale.ENGLISH;
 
 @Configuration
 @EnableWebMvc
@@ -37,6 +40,12 @@ public class WebConfiguration extends WebMvcConfigurerAdapter {
         return new DomainClassConverter<FormattingConversionService>(conversionService);
     }
 
+    @Bean
+    public CookieLocaleResolver localeResolver() {
+        CookieLocaleResolver localeResolver = new CookieLocaleResolver();
+        localeResolver.setDefaultLocale(ENGLISH);
+        return localeResolver;
+    }
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
