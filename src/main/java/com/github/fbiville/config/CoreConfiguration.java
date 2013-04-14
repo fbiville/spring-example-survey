@@ -1,4 +1,4 @@
-package com.github.lateralthoughts.config;
+package com.github.fbiville.config;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -19,7 +19,7 @@ import javax.sql.DataSource;
 import static org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType.H2;
 
 @Configuration
-@EnableJpaRepositories("com.github.lateralthoughts.repositories")
+@EnableJpaRepositories("com.github.fbiville.repositories")
 @EnableTransactionManagement
 public class CoreConfiguration {
 
@@ -39,7 +39,7 @@ public class CoreConfiguration {
 
         LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
         factory.setJpaVendorAdapter(vendorAdapter);
-        factory.setPackagesToScan("com.github.lateralthoughts.domain");
+        factory.setPackagesToScan("com.github.fbiville.domain");
         factory.setDataSource(dataSource());
         factory.afterPropertiesSet();
 

@@ -1,4 +1,4 @@
-package com.github.lateralthoughts.config;
+package com.github.fbiville.config;
 
 
 import org.springframework.context.annotation.Bean;
@@ -18,8 +18,8 @@ import javax.inject.Named;
 @Configuration
 @EnableWebMvc
 @ComponentScan({
-    "com.github.lateralthoughts.controllers",
-    "com.github.lateralthoughts.exceptions"
+    "com.github.fbiville.controllers",
+    "com.github.fbiville.exceptions"
 })
 public class WebConfiguration extends WebMvcConfigurerAdapter {
 

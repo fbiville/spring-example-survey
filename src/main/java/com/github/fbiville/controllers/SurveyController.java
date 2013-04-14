@@ -1,13 +1,11 @@
-package com.github.lateralthoughts.controllers;
+package com.github.fbiville.controllers;
 
-import com.github.lateralthoughts.domain.Survey;
-import com.github.lateralthoughts.repositories.SurveyRepository;
-import com.github.lateralthoughts.validation.FirstScreenGroup;
-import com.github.lateralthoughts.validation.SecondScreenGroup;
-import com.github.lateralthoughts.validation.ThirdScreenGroup;
+import com.github.fbiville.domain.Survey;
+import com.github.fbiville.repositories.SurveyRepository;
+import com.github.fbiville.validation.FirstScreenGroup;
+import com.github.fbiville.validation.SecondScreenGroup;
+import com.github.fbiville.validation.ThirdScreenGroup;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
-import org.springframework.core.convert.support.GenericConversionService;
-import org.springframework.data.repository.support.DomainClassConverter;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
@@ -18,7 +16,6 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;

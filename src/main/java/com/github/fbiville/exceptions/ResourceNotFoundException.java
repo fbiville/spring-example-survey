@@ -1,4 +1,4 @@
-package com.github.lateralthoughts.exceptions;
+package com.github.fbiville.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

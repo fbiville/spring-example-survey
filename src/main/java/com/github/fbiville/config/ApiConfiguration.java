@@ -1,4 +1,4 @@
-package com.github.lateralthoughts.config;
+package com.github.fbiville.config;
 
 
 import org.springframework.context.annotation.Configuration;

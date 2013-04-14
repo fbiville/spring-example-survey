@@ -61,7 +61,7 @@
     </context-param>
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>com.github.lateralthoughts.config.CoreConfiguration</param-value>
+        <param-value>com.github.fbiville.config.CoreConfiguration</param-value>
     </context-param>
     <context-param>
         <param-name>webAppVersion</param-name>
@@ -79,7 +79,7 @@
         </init-param>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>com.github.lateralthoughts.config.WebConfiguration</param-value>
+            <param-value>com.github.fbiville.config.WebConfiguration</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
@@ -99,7 +99,7 @@
         </init-param>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>com.github.lateralthoughts.config.ApiConfiguration</param-value>
+            <param-value>com.github.fbiville.config.ApiConfiguration</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>

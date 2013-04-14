@@ -1,8 +1,8 @@
-package com.github.lateralthoughts.domain;
+package com.github.fbiville.domain;
 
-import com.github.lateralthoughts.validation.FirstScreenGroup;
-import com.github.lateralthoughts.validation.SecondScreenGroup;
-import com.github.lateralthoughts.validation.ThirdScreenGroup;
+import com.github.fbiville.validation.FirstScreenGroup;
+import com.github.fbiville.validation.SecondScreenGroup;
+import com.github.fbiville.validation.ThirdScreenGroup;
 import org.hibernate.validator.constraints.NotBlank;
 
 import javax.persistence.*;

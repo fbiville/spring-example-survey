@@ -1,6 +1,6 @@
-package com.github.lateralthoughts.repositories;
+package com.github.fbiville.repositories;
 
-import com.github.lateralthoughts.domain.Survey;
+import com.github.fbiville.domain.Survey;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.repository.annotation.RestResource;
 
