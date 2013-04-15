@@ -7,8 +7,7 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguratio
 
 @Configuration
 @Import({
-    RepositoryRestMvcConfiguration.class,
-    CoreConfiguration.class
+    RepositoryRestMvcConfiguration.class
 })
 public class ApiConfiguration {
 
