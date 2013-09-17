@@ -10,3 +10,7 @@ Read the sources, Luke.
 
 I promise, I'm a good guy and I practice TDD all the time.
 Well... hmm... except this time...
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/fbiville/spring-example-survey/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
